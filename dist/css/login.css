@@ -1,0 +1,300 @@
+@font-face {
+  font-family: dijlah;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/dijlah-font/BloombergArabicBetav4-Regular.woff")
+      format("woff"),
+    url("../fonts/dijlah-font/BloombergArabicBetav4-Regular.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/dijlah-font/BloombergArabicBetav4-Bold.woff")
+      format("woff"),
+    url("../fonts/dijlah-font/BloombergArabicBetav4-Bold.woff2") format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 0;
+  font-family: dijlah;
+}
+
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+/*  */
+
+#main-login {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 100%;
+  /* border-radius: 10px;
+  box-shadow: 0.8px 0.7px 2.2px rgba(0, 0, 0, 0.02),
+    2px 1.7px 5.3px rgba(0, 0, 0, 0.028), 3.8px 3.1px 10px rgba(0, 0, 0, 0.035),
+    6.7px 5.6px 17.9px rgba(0, 0, 0, 0.042),
+    12.5px 10.4px 33.4px rgba(0, 0, 0, 0.05), 30px 25px 80px rgba(0, 0, 0, 0.07); */
+  display: flex;
+  overflow: hidden;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.login-side {
+  width: 35%;
+  position: relative;
+}
+
+.login-side::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #0000003e;
+}
+
+.login-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-container {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-side {
+    width: 100%;
+    height: 80px;
+  }
+}
+
+.logo {
+  width: 50%;
+  align-self: flex-end;
+}
+
+.bg-logo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.tabs {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-self: center;
+  gap: 30px;
+  padding: 10px 0;
+  background-color: #f3f3f3;
+  border-radius: 0 10px 10px 10px;
+  z-index: 10;
+}
+
+.tabs-buttons {
+  position: absolute;
+  left: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 45%;
+  z-index: 20;
+}
+
+.tabs__btn {
+  font-weight: bold;
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 0 100rem 100rem 0;
+  transition: color 0.5s, background-color 0.5s;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.tabs__btn > .icon {
+  width: 20px;
+  fill: white;
+  transition: fill 0.5s;
+}
+
+.triangle {
+  position: absolute;
+  left: 0;
+  display: none;
+  width: 30px;
+  animation: fadein 0.5s;
+}
+
+.triangle.top {
+  bottom: 100%;
+}
+.triangle.bottom {
+  top: 100%;
+  rotate: 90deg;
+}
+
+.tabs__btn.active {
+  background-color: white;
+  color: black;
+}
+.tabs__btn.active > .icon {
+  fill: black;
+}
+
+.tabs__btn.active > .triangle {
+  display: block;
+}
+
+.tabs-contents {
+  width: 80%;
+  align-self: center;
+}
+
+.tabs__content {
+  display: none;
+  animation: fadein 0.8s;
+}
+.tabs__content.active {
+  display: flex;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tabs {
+    width: 100%;
+  }
+  .tabs-buttons {
+    bottom: 0;
+    left: 0;
+    top: auto;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
+  }
+  .tabs__btn {
+    border-radius: 100rem;
+  }
+
+  .tabs__btn.active > .triangle {
+    display: none;
+  }
+}
+
+/* * form */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.form__row {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.form__col {
+  flex: 1 0 0;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 0 10px 10px 10px;
+  border: 2px solid #dfdfdf;
+  font-family: "dijlah";
+}
+
+.form__btn {
+  width: 50%;
+  align-self: center;
+  background-color: #113457;
+  color: white;
+  border: 0;
+  padding: 10px;
+  font-family: "dijlah";
+  cursor: pointer;
+  border-radius: 0 10px 10px 10px;
+}

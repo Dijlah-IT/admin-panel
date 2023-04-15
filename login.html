@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="main-login">
+      <div class="login-container">
+        <div class="login-side">
+          <img src="./dist/images/photo.jpg" alt="" class="login-img" />
+          <div class="tabs-buttons">
+            <div class="tabs__btn active">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1 1"
+                class="triangle top"
+              >
+                <path d="M0 0 0 1 1 1C1 1 0 1 0 0" fill="#fff" />
+              </svg>
+
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+                />
+              </svg>
+              تسجیل الدخول
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1 1"
+                class="triangle bottom"
+              >
+                <path d="M0 0 0 1 1 1C1 1 0 1 0 0" fill="#fff" />
+              </svg>
+            </div>
+            <div class="tabs__btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1 1"
+                class="triangle top"
+              >
+                <path d="M0 0 0 1 1 1C1 1 0 1 0 0" fill="#fff" />
+              </svg>
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512"
+              >
+                <path
+                  d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
+                />
+              </svg>
+              اشتراك
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1 1"
+                class="triangle bottom"
+              >
+                <path d="M0 0 0 1 1 1C1 1 0 1 0 0" fill="#fff" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="tabs">
+            <img src="./dist/images/logo-login-ad.jpg" alt="" class="logo" />
+            <div class="tabs-contents">
+              <div class="tabs__content login active">
+                <form action="#" class="form login-form">
+                  <div class="form__row">
+                    <div class="form__col">
+                      <input
+                        class="form__input"
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="اسم المستخدم"
+                      />
+                    </div>
+                  </div>
+                  <div class="form__row">
+                    <div class="form__col">
+                      <input
+                        class="form__input"
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="کلمه الورود"
+                      />
+                    </div>
+                  </div>
+                  <input type="button" value="دخول" class="form__btn" />
+                </form>
+              </div>
+              <div class="tabs__content sign-up">
+                <form action="#" class="form signup-form">
+                  <div class="form__row">
+                    <div class="form__col">
+                      <input
+                        class="form__input"
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="اسم المستخدم"
+                      />
+                    </div>
+                  </div>
+                  <div class="form__row">
+                    <div class="form__col">
+                      <input
+                        class="form__input"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="بريد إلكتروني"
+                      />
+                    </div>
+                  </div>
+                  <div class="form__row">
+                    <div class="form__col">
+                      <input
+                        class="form__input"
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="کلمه الورود"
+                      />
+                    </div>
+                  </div>
+                  <input type="button" value="اشتراك" class="form__btn" />
+                </form>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./dist/images/bg-logo-login-ad.jpg"
+            class="bg-logo"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./dist/js/login.js"></script>
+</html>
