@@ -2662,6 +2662,7 @@ select {
   border-radius: 9999px;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #092646;
 }
 
 .dark .form-switch .form-check-input:before {
@@ -2677,7 +2678,7 @@ select {
 }
 
 .form-switch .form-check-input:checked::before {
-  margin-left: 14px;
+  margin-right: 14px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
@@ -10719,10 +10720,10 @@ body.tabulator-print-fullscreen-hide > *:not(.tabulator-print-fullscreen) {
   vertical-align: middle;
   display: inline-block;
   padding: 2px 6px;
-  border-left: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
   border-radius: 0 2px 2px 0;
   box-sizing: border-box;
-  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .ts-control.plugin-remove_button .item .remove:hover {
@@ -17288,7 +17289,7 @@ html body {
 }
 
 .tom-select.plugin-remove_button .item .remove {
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   --tw-border-opacity: 1;
   border-color: rgb(var(--color-slate-300) / var(--tw-border-opacity));
   padding-left: 0.5rem;
